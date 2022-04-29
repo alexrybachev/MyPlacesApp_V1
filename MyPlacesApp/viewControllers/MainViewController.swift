@@ -9,7 +9,7 @@ import UIKit
 
 class MainViewController: UITableViewController {
     
-    // MARK: - Properties   
+    // MARK: - Properties
     let places = Place.getPlace()
         
     // MARK: - View Life Cyrcle
@@ -41,4 +41,6 @@ extension MainViewController {
         
         return cell
     }
+    
+    @IBAction func cancelAction(_ segue: UIStoryboardSegue) {}
 }
