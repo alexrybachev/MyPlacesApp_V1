@@ -15,6 +15,7 @@
 		2865EAED281BB7C700A032EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2865EAEB281BB7C700A032EC /* LaunchScreen.storyboard */; };
 		2865EAFA281BD53C00A032EC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865EAF9281BD53C00A032EC /* CustomTableViewCell.swift */; };
 		2865EAFD281BDA5A00A032EC /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865EAFC281BDA5A00A032EC /* Place.swift */; };
+		2865EAFF281BE94100A032EC /* NewPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865EAFE281BE94100A032EC /* NewPlaceTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2865EAEE281BB7C700A032EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2865EAF9281BD53C00A032EC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		2865EAFC281BDA5A00A032EC /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		2865EAFE281BE94100A032EC /* NewPlaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2865EAE4281BB7C500A032EC /* MainViewController.swift */,
+				2865EAFE281BE94100A032EC /* NewPlaceTableViewController.swift */,
 				2865EAF8281BD50F00A032EC /* TableViewCell */,
 			);
 			path = ViewControllers;
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2865EAFF281BE94100A032EC /* NewPlaceTableViewController.swift in Sources */,
 				2865EAE5281BB7C500A032EC /* MainViewController.swift in Sources */,
 				2865EAE1281BB7C500A032EC /* AppDelegate.swift in Sources */,
 				2865EAFA281BD53C00A032EC /* CustomTableViewCell.swift in Sources */,
