@@ -40,9 +40,12 @@
         <scene sceneID="d8b-FN-aYz">
             <objects>
                 <navigationController id="jhB-kL-5KM" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5IL-DP-EFg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5IL-DP-EFg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="WvU-5X-Hrd" kind="relationship" relationship="rootViewController" id="y0P-Uv-jlY"/>

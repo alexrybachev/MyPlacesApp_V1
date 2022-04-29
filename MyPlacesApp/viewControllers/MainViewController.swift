@@ -12,7 +12,7 @@ class MainViewController: UITableViewController {
     // MARK: - Properties
     let restaurantNames = [
         "Burger Heroes", "Kitchen", "Bonsai", "Дастархан",
-        "Индокитай", "X.O.", "Балкан Гриль", "Sherlock Holmes",
+        "Индокитай", "X.O", "Балкан Гриль", "Sherlock Holmes",
         "Speak Easy", "Morris Pub", "Вкусные истории",
         "Классик", "Love&Life", "Шок", "Бочка"
     ]
@@ -34,6 +34,7 @@ extension MainViewController {
         var content = cell.defaultContentConfiguration()
         content.text = restaurantNames[indexPath.row]
         content.image = UIImage(named: restaurantNames[indexPath.row])
+        content.imageProperties.cornerRadius = cell.frame.height / 2
         cell.contentConfiguration = content
         return cell
     }
@@ -41,5 +42,7 @@ extension MainViewController {
 
 // MARK: - UITableViewDelegate
 extension MainViewController {
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        85
+    }
 }
