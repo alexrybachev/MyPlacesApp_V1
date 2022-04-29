@@ -9,7 +9,7 @@ import UIKit
 
 class NewPlaceTableViewController: UITableViewController {
     
-    var newPlace: Place?
+    var newPlace = Place()
     var imageIsChanged = false
 
     @IBOutlet var placeImage: UIImageView!
@@ -21,6 +21,10 @@ class NewPlaceTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DispatchQueue.main.async {
+            self.newPlace.savePlaces()
+        }
         
         saveButton.isEnabled = false
         
@@ -75,13 +79,13 @@ extension NewPlaceTableViewController {
             image = #imageLiteral(resourceName: "imagePlaceholder")
         }
         
-        newPlace = Place(
-            name: placeNameTF.text!,
-            location: placeLocationTF.text,
-            type: placeTypeTF.text,
-            image: image,
-            restaurantImage: nil
-        )
+//        newPlace = Place(
+//            name: placeNameTF.text!,
+//            location: placeLocationTF.text,
+//            type: placeTypeTF.text,
+//            image: image,
+//            restaurantImage: nil
+//        )
     }
     
     

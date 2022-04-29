@@ -18,6 +18,7 @@
 		2865EAFF281BE94100A032EC /* NewPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865EAFE281BE94100A032EC /* NewPlaceTableViewController.swift */; };
 		2865EB02281C01AE00A032EC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2865EB01281C01AE00A032EC /* Realm */; };
 		2865EB04281C01AE00A032EC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2865EB03281C01AE00A032EC /* RealmSwift */; };
+		2865EB07281C046500A032EC /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865EB06281C046500A032EC /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2865EAF9281BD53C00A032EC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		2865EAFC281BDA5A00A032EC /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		2865EAFE281BE94100A032EC /* NewPlaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceTableViewController.swift; sourceTree = "<group>"; };
+		2865EB06281C046500A032EC /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				2865EAF4281BB7D300A032EC /* App */,
 				2865EAFB281BDA3D00A032EC /* Models */,
 				2865EAF5281BB7DA00A032EC /* ViewControllers */,
+				2865EB05281C045100A032EC /* Services */,
 				2865EAF6281BB7E300A032EC /* Storyboards */,
 				2865EAF7281BB7EC00A032EC /* Resources */,
 			);
@@ -126,6 +129,14 @@
 				2865EAFC281BDA5A00A032EC /* Place.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2865EB05281C045100A032EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2865EB06281C046500A032EC /* StorageManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				2865EAFF281BE94100A032EC /* NewPlaceTableViewController.swift in Sources */,
 				2865EAE5281BB7C500A032EC /* MainViewController.swift in Sources */,
 				2865EAE1281BB7C500A032EC /* AppDelegate.swift in Sources */,
+				2865EB07281C046500A032EC /* StorageManager.swift in Sources */,
 				2865EAFA281BD53C00A032EC /* CustomTableViewCell.swift in Sources */,
 				2865EAE3281BB7C500A032EC /* SceneDelegate.swift in Sources */,
 				2865EAFD281BDA5A00A032EC /* Place.swift in Sources */,

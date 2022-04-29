@@ -5,31 +5,35 @@
 //  Created by Aleksandr Rybachev on 29.04.2022.
 //
 
+import RealmSwift
 import UIKit
 
-struct Place {
-    let name: String
-    let location: String?
-    let type: String?
-    let image: UIImage?
-    let restaurantImage: String?
+class Place: Object {
+    @Persisted var name = ""
+    @Persisted var location: String?
+    @Persisted var type: String?
+    @Persisted var imageData: Data?
     
-    static let restaurantNames = [
+    let restaurantNames = [
         "Burger Heroes", "Kitchen", "Bonsai", "Дастархан",
         "Индокитай", "X.O", "Балкан Гриль", "Sherlock Holmes",
         "Speak Easy", "Morris Pub", "Вкусные истории",
         "Классик", "Love&Life", "Шок", "Бочка"
     ]
-}
-
-extension Place {
-    static func getPlace() -> [Place] {
-        var places = [Place]()
-        
-        for place in restaurantNames {
-            places.append(Place(name: place, location: "Уфа", type: "Ресторан", image: nil, restaurantImage: place))
-        }
     
-        return places
+    func savePlaces() {
+        for place in restaurantNames {
+            
+            let image = UIImage(named: place)
+            guard let imageData = image?.pngData() else { return }
+            
+            let newPlace = Place()
+            newPlace.name = place
+            newPlace.location = "Ufa"
+            newPlace.type = "Restraunt"
+            newPlace.imageData = imageData
+            
+            StorageManager.saveObject(newPlace)
+        }
     }
 }
