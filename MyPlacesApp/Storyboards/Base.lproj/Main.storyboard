@@ -22,6 +22,9 @@
                                     <segment title="Date"/>
                                     <segment title="Name"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sortSelection:" destination="WMW-GH-4co" eventType="valueChanged" id="Dlc-tf-rWD"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CYy-sq-w4P">
                                 <rect key="frame" x="0.0" y="120" width="375" height="692"/>
@@ -93,13 +96,17 @@
                         <viewLayoutGuide key="safeArea" id="pls-pc-PN9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Vvr-e4-RPP" firstAttribute="top" secondItem="pls-pc-PN9" secondAttribute="top" id="cpe-Hp-Jew"/>
-                            <constraint firstItem="pls-pc-PN9" firstAttribute="trailing" secondItem="Vvr-e4-RPP" secondAttribute="trailing" id="p50-Lj-p8N"/>
-                            <constraint firstItem="Vvr-e4-RPP" firstAttribute="leading" secondItem="pls-pc-PN9" secondAttribute="leading" id="wX5-WP-9kb"/>
+                            <constraint firstItem="Vvr-e4-RPP" firstAttribute="leading" secondItem="pls-pc-PN9" secondAttribute="leading" id="A6K-Bs-R55"/>
+                            <constraint firstItem="Vvr-e4-RPP" firstAttribute="trailing" secondItem="pls-pc-PN9" secondAttribute="trailing" id="HC8-Gg-Sq9"/>
+                            <constraint firstItem="Vvr-e4-RPP" firstAttribute="top" secondItem="pls-pc-PN9" secondAttribute="top" id="r8B-T9-ela"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Favorite Places" largeTitleDisplayMode="never" id="Dd9-Pc-fXm">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="AZ" id="inC-ed-3ps"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="AZ" id="inC-ed-3ps">
+                            <connections>
+                                <action selector="reversedSorting:" destination="WMW-GH-4co" id="vFq-yq-Byb"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="2WZ-nb-6LC">
                             <connections>
                                 <segue destination="mhi-50-xiH" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="DWq-8B-VDK"/>
@@ -107,6 +114,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="reverseSortingButton" destination="inC-ed-3ps" id="WIm-bz-WXO"/>
+                        <outlet property="segmentedControl" destination="Vvr-e4-RPP" id="MyE-S9-RWo"/>
                         <outlet property="tableView" destination="CYy-sq-w4P" id="bEY-Eg-3FH"/>
                     </connections>
                 </viewController>
