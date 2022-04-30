@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280637E4281D876500F02551 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280637E3281D876500F02551 /* RatingControl.swift */; };
 		2865EAE1281BB7C500A032EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865EAE0281BB7C500A032EC /* AppDelegate.swift */; };
 		2865EAE3281BB7C500A032EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865EAE2281BB7C500A032EC /* SceneDelegate.swift */; };
 		2865EAE5281BB7C500A032EC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865EAE4281BB7C500A032EC /* MainViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280637E3281D876500F02551 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		2865EADD281BB7C500A032EC /* MyPlacesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlacesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2865EAE0281BB7C500A032EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2865EAE2281BB7C500A032EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				2865EAE4281BB7C500A032EC /* MainViewController.swift */,
 				2865EAFE281BE94100A032EC /* NewPlaceTableViewController.swift */,
+				280637E3281D876500F02551 /* RatingControl.swift */,
 				2865EAF8281BD50F00A032EC /* TableViewCell */,
 			);
 			path = ViewControllers;
@@ -221,6 +224,7 @@
 				2865EAE5281BB7C500A032EC /* MainViewController.swift in Sources */,
 				2865EAE1281BB7C500A032EC /* AppDelegate.swift in Sources */,
 				2865EB07281C046500A032EC /* StorageManager.swift in Sources */,
+				280637E4281D876500F02551 /* RatingControl.swift in Sources */,
 				2865EAFA281BD53C00A032EC /* CustomTableViewCell.swift in Sources */,
 				2865EAE3281BB7C500A032EC /* SceneDelegate.swift in Sources */,
 				2865EAFD281BDA5A00A032EC /* Place.swift in Sources */,
