@@ -27,7 +27,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X0r-Q0-qoG">
-                                <rect key="frame" x="0.0" y="119" width="428" height="773"/>
+                                <rect key="frame" x="0.0" y="119" width="428" height="807"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="uLx-5X-2uu" customClass="CustomTableViewCell" customModule="MyPlacesApp" customModuleProvider="target">
@@ -99,7 +99,7 @@
                             <constraint firstItem="Cto-0V-oPO" firstAttribute="top" secondItem="kB0-RI-g1V" secondAttribute="top" id="OJ6-lH-DHi"/>
                             <constraint firstItem="X0r-Q0-qoG" firstAttribute="leading" secondItem="kB0-RI-g1V" secondAttribute="leading" id="Q8G-nZ-sTx"/>
                             <constraint firstItem="Cto-0V-oPO" firstAttribute="leading" secondItem="kB0-RI-g1V" secondAttribute="leading" id="Uyk-eQ-PyW"/>
-                            <constraint firstItem="kB0-RI-g1V" firstAttribute="bottom" secondItem="X0r-Q0-qoG" secondAttribute="bottom" id="lTR-Y0-4c2"/>
+                            <constraint firstAttribute="bottom" secondItem="X0r-Q0-qoG" secondAttribute="bottom" id="lTR-Y0-4c2"/>
                             <constraint firstItem="X0r-Q0-qoG" firstAttribute="top" secondItem="Cto-0V-oPO" secondAttribute="bottom" id="q7n-kj-mRr"/>
                             <constraint firstItem="kB0-RI-g1V" firstAttribute="trailing" secondItem="X0r-Q0-qoG" secondAttribute="trailing" id="tUz-m2-8wc"/>
                         </constraints>
@@ -270,7 +270,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TRJ-RJ-y6m" customClass="RatingControl" customModule="MyPlacesApp" customModuleProvider="target">
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="252" placeholderIntrinsicHeight="44" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TRJ-RJ-y6m" customClass="RatingControl" customModule="MyPlacesApp" customModuleProvider="target">
                                                     <rect key="frame" x="88" y="48" width="252" height="44"/>
                                                 </stackView>
                                             </subviews>
@@ -351,6 +351,11 @@
             <point key="canvasLocation" x="1586" y="-313"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="TRJ-RJ-y6m">
+            <size key="intrinsicContentSize" width="252" height="44"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="muQ-7L-2XO"/>
     </inferredMetricsTieBreakers>
