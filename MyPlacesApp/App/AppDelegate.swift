@@ -12,8 +12,17 @@ import RealmSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let schemaVersion: UInt64 = 5
+        
         let config = Realm.Configuration(
-            schemaVersion: 2)
+            schemaVersion: schemaVersion,
+            migrationBlock: { migration, oldSchemaVersion in
+                if (oldSchemaVersion < schemaVersion) {
+                    
+                }
+            }
+        )
         // Use this configuration when opening realms
         Realm.Configuration.defaultConfiguration = config
 //        let realm = try! Realm()
