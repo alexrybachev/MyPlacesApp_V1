@@ -45,39 +45,54 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="GSw-S0-l0C">
-                                                    <rect key="frame" x="95" y="9" width="318" height="67"/>
+                                                    <rect key="frame" x="95" y="9" width="223" height="67"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNJ-Gv-d7D">
-                                                            <rect key="frame" x="0.0" y="0.0" width="318" height="23.666666666666668"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="223" height="23.666666666666668"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIk-EO-60D">
-                                                            <rect key="frame" x="0.0" y="26.666666666666664" width="318" height="19.666666666666664"/>
+                                                            <rect key="frame" x="0.0" y="26.666666666666664" width="223" height="19.666666666666664"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eno-uz-xWf">
-                                                            <rect key="frame" x="0.0" y="49.333333333333336" width="318" height="17.666666666666664"/>
+                                                            <rect key="frame" x="0.0" y="49.333333333333336" width="223" height="17.666666666666664"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="41" translatesAutoresizingMaskIntoConstraints="NO" id="740-98-I0E" customClass="CosmosView" customModule="Cosmos">
+                                                    <rect key="frame" x="326" y="22" width="90" height="41"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="I39-O1-FZX"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="14"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="GSw-S0-l0C" secondAttribute="trailing" constant="15" id="PPS-rb-iim"/>
+                                                <constraint firstItem="740-98-I0E" firstAttribute="centerY" secondItem="PLi-7T-9IS" secondAttribute="centerY" id="JY6-vg-CeH"/>
                                                 <constraint firstItem="79i-2e-EpM" firstAttribute="leading" secondItem="PLi-7T-9IS" secondAttribute="leading" constant="15" id="QGH-mo-tMO"/>
                                                 <constraint firstItem="GSw-S0-l0C" firstAttribute="leading" secondItem="79i-2e-EpM" secondAttribute="trailing" constant="15" id="iEv-p5-0Dj"/>
+                                                <constraint firstItem="740-98-I0E" firstAttribute="trailing" secondItem="PLi-7T-9IS" secondAttribute="trailingMargin" constant="8" id="kLA-LR-dFy"/>
                                                 <constraint firstItem="GSw-S0-l0C" firstAttribute="top" secondItem="PLi-7T-9IS" secondAttribute="top" constant="9" id="lW8-R7-Shk"/>
+                                                <constraint firstItem="740-98-I0E" firstAttribute="leading" secondItem="GSw-S0-l0C" secondAttribute="trailing" constant="8" id="ts1-5Y-hrr"/>
                                                 <constraint firstAttribute="bottom" secondItem="GSw-S0-l0C" secondAttribute="bottom" constant="9" id="ur4-w5-Ldp"/>
                                                 <constraint firstItem="79i-2e-EpM" firstAttribute="centerY" secondItem="PLi-7T-9IS" secondAttribute="centerY" id="y8u-65-M3p"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cosmosView" destination="740-98-I0E" id="vho-tN-CFx"/>
                                             <outlet property="imageOfPlace" destination="79i-2e-EpM" id="TYw-0k-EDH"/>
                                             <outlet property="locationLabel" destination="AIk-EO-60D" id="ss9-qY-hZs"/>
                                             <outlet property="nameLabel" destination="VNJ-Gv-d7D" id="bWO-1e-GYX"/>
@@ -124,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hq2-x0-0ya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830" y="10"/>
+            <point key="canvasLocation" x="829.90654205607473" y="9.7192224622030245"/>
         </scene>
         <!--New Place-->
         <scene sceneID="mZ0-p4-oG6">
