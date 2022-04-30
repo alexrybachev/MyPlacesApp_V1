@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vvr-e4-RPP">
-                                <rect key="frame" x="0.0" y="88" width="375" height="32"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="36"/>
                                 <segments>
                                     <segment title="Date"/>
                                     <segment title="Name"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CYy-sq-w4P">
-                                <rect key="frame" x="0.0" y="120" width="375" height="692"/>
+                                <rect key="frame" x="0.0" y="123" width="375" height="689"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -96,9 +96,10 @@
                         <viewLayoutGuide key="safeArea" id="pls-pc-PN9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Vvr-e4-RPP" firstAttribute="leading" secondItem="pls-pc-PN9" secondAttribute="leading" id="A6K-Bs-R55"/>
-                            <constraint firstItem="Vvr-e4-RPP" firstAttribute="trailing" secondItem="pls-pc-PN9" secondAttribute="trailing" id="HC8-Gg-Sq9"/>
-                            <constraint firstItem="Vvr-e4-RPP" firstAttribute="top" secondItem="pls-pc-PN9" secondAttribute="top" id="r8B-T9-ela"/>
+                            <constraint firstItem="Vvr-e4-RPP" firstAttribute="top" secondItem="pls-pc-PN9" secondAttribute="top" id="Hmh-QL-5po"/>
+                            <constraint firstItem="Vvr-e4-RPP" firstAttribute="leading" secondItem="pls-pc-PN9" secondAttribute="leading" id="V0k-86-knG"/>
+                            <constraint firstItem="pls-pc-PN9" firstAttribute="trailing" secondItem="Vvr-e4-RPP" secondAttribute="trailing" id="n33-nX-LmJ"/>
+                            <constraint firstItem="CYy-sq-w4P" firstAttribute="top" secondItem="Vvr-e4-RPP" secondAttribute="bottom" id="pTj-gT-Du8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Favorite Places" largeTitleDisplayMode="never" id="Dd9-Pc-fXm">
@@ -121,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yzt-QP-5N2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="837.68115942028987" y="8.7053571428571423"/>
+            <point key="canvasLocation" x="837.60000000000002" y="8.1280788177339911"/>
         </scene>
         <!--New Place-->
         <scene sceneID="mZ0-p4-oG6">
