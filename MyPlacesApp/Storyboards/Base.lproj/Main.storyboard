@@ -68,6 +68,7 @@
                                     <outlet property="locationLabel" destination="InD-i3-AxC" id="L1G-WI-zze"/>
                                     <outlet property="nameLabel" destination="tDH-LE-1aD" id="2bg-X8-dBD"/>
                                     <outlet property="typeLabel" destination="9bs-FL-UxI" id="1R5-Fw-hJH"/>
+                                    <segue destination="ZOd-8F-KfS" kind="show" identifier="showDetail" id="cGa-yN-vvA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -76,7 +77,7 @@
                             <outlet property="delegate" destination="WvU-5X-Hrd" id="Kta-bi-ZJn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Favorite Places" id="HCD-f9-lym">
+                    <navigationItem key="navigationItem" title="My Favorite Places" largeTitleDisplayMode="never" id="HCD-f9-lym">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RmH-Yv-50C">
                             <connections>
                                 <segue destination="mhi-50-xiH" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="IJx-iC-SHb"/>
@@ -233,7 +234,7 @@
                             <outlet property="delegate" destination="ZOd-8F-KfS" id="PvF-Sa-WVF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Place" id="T9e-Q0-Zkg">
+                    <navigationItem key="navigationItem" title="New Place" largeTitleDisplayMode="always" id="T9e-Q0-Zkg">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="VLw-qT-Br9">
                             <connections>
                                 <action selector="cancelAction:" destination="ZOd-8F-KfS" id="CKy-N1-lL9"/>
@@ -256,14 +257,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdd-Cp-RkN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="fJo-DF-bJx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2298.5507246376815" y="8.7053571428571423"/>
+            <point key="canvasLocation" x="2333" y="255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d8b-FN-aYz">
             <objects>
                 <navigationController id="jhB-kL-5KM" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5IL-DP-EFg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5IL-DP-EFg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
@@ -293,9 +294,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ws-aQ-aas" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1569.5652173913045" y="8.7053571428571423"/>
+            <point key="canvasLocation" x="1586" y="-313"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gl9-aw-3hE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Photo" width="195" height="196"/>
         <systemColor name="systemBackgroundColor">
